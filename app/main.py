@@ -25,7 +25,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
+"""
 while True:
     try:
         conn = psycopg2.connect(host="localhost", database="fastapi", user="postgres",
@@ -37,7 +37,7 @@ while True:
         print("connecting to database failed")
         print('Error: ', error)
         time.sleep(2)
-
+"""
 my_posts = [
     {"title": "title of posts 1", "content": "content of posts", "id":1},
     {"title":"fav food","content": "I like pazza", "id":2}]
